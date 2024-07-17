@@ -1,0 +1,339 @@
+    :root {
+      --header-image: url('https://indubitablyjacksin.neocities.org/canet2.0.gif');
+      --body-bg-image: url('https://indubitablyjacksin.neocities.org/canet2.0.gif');
+
+      /* colors */
+      --content: #F2D492;
+      --highlight-dark-blue: #569095;
+      --main-background-color: #202C39;
+      --sub-backgrond-color: #24323F;
+      --box-background-color: #283845;
+      --main-text-color: #F2D492;
+      --link-color: #F2D492;
+      --hover-link-color: #F2A568;
+      --bold-color: #F29559;
+      --highlight-blue: #66D6E1;
+      --last-updated-time: "13 April 2024";
+      
+      
+  }
+
+    @font-face {
+      font-family: Nunito;
+      src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+  }
+
+  @font-face {
+      font-family: Nunito;
+      src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+      font-weight: bold;
+  }
+
+  @font-face {
+      font-family: Nunito;
+      src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: Nunito;
+      src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+      font-style: italic;
+      font-weight: bold;
+  }
+  
+  @font-face {
+      font-family: IndustrialFaith;
+      src:  url('/resources/fonts/INDFAIT_.TTF');
+      font-style: normal;
+      
+  }
+  
+  @font-face {
+      font-family: Octane;
+      src: url('/resources/fonts/OCS_____.TTF');
+      font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'JosefinSans';
+    src: url("/resources/fonts/JosefinSans-VariableFont_wght.ttf");
+  }
+
+  @font-face {
+    font-family: 'JosefinSans';
+    src: url("/resources/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+  }
+
+  body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      background-color: var(--box-background-color);
+      /* you can delete the line below if you'd prefer to not use an image 
+      background-size: 65px;*/
+      /*color: var(--main-text-color);*/
+      
+      background-image: var(--body-bg-image);
+      z-index: 0;
+
+      
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  /* below this line is CSS for the layout */
+
+  /* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
+
+
+  /* the "container" is what wraps your entire website */
+  /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+  #container {
+      max-width: 1200px;
+      /* this is the width of your layout! */
+      /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+      margin: 0 auto;
+      /* this centers the entire page */
+      max-height:fit-content;
+  }
+
+  /* the area below is for all links on your page
+EXCEPT for the navigation */
+  #container a {
+      color: var(--link-color);
+      font-weight: bold;
+      /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
+  }
+  
+  #container a:hover{
+      color: var(--hover-link-color); 
+  }
+
+  #header {
+      width: 100%;
+      background-color: var(--box-background-color);
+      color: var(--box-background-color);
+      /* header color here! */
+      height: 150px;
+      /* this is only for a background image! */
+      /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+      background-image: var(--header-image);
+      background-size: 100%;
+      z-index: 3;
+      
+  }
+
+  #mainheader{
+    text-align: center;
+    color: var(--highlight-blue);
+    background-image: url("/comments/sparkle-bg.gif");
+    font-family: 'Octane';
+
+}
+
+
+  #flex {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1%;
+      padding-bottom: 25px;
+  }
+
+  aside {
+      color: var(--main-text-color);
+      background-color: var(--main-background-color);
+      width: 200px;
+      padding: 20px;
+      font-size: smaller;
+      /* this makes the sidebar text slightly smaller */
+      color: var(--highlight-blue);
+      z-index: 0;
+      
+
+  }
+
+  main {
+      color: var(--main-text-color);
+      background-color: var(--main-background-color);
+      flex: 1;
+      padding: 20px;
+      order: 2;
+      overflow-y: auto;
+      z-index: 1;
+  }
+
+  
+  #leftSidebar {
+      order: 1;
+  }
+  
+  /* navigation links*/
+  #leftSidebar li a {
+    color: var(--link-color);
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+    /* this removes the underline */
+}
+
+  /* navigation link when a link is hovered over */
+  #leftSidebar li a:hover {
+    color: var(--hover-link-color);
+    text-decoration: underline;
+}
+
+  #rightSidebar {
+      order: 3;
+      width: 30%;
+      overflow-x: auto;
+  }
+
+  footer {
+      background-color: var(--sub-background-color);
+      /* background color for footer */
+      width: 100;
+      height: 10px;
+      /* this centers the footer text */
+      color: var(--main-text-color);
+      justify-content: space-between, space-evenly;
+  }
+  
+  footer p {
+      text-align: center;
+      align-self: baseline;
+  }
+
+  h1,
+  h2,
+  h3 {
+      font-family: 'JosefinSans', sans-serif;
+      color: var(--text-color);
+  }
+
+  h1 {
+      font-size: 25px;                
+  }
+  
+
+  strong {
+      /* this styles bold text */
+      color: var(--bold-color);
+  }
+
+ 
+
+  /* this is just a cool box, it's the darker colored one */
+  .box {
+      background-color: var(--sub-background-color);
+      border: 5px solid var(--highlight-blue);
+      padding: 10px;
+      height: 100%;
+  }
+
+  /* CSS for extras */
+
+  #topBar {
+      width: 100%;
+      height: 30px;
+      padding: 10px;
+      font-size: smaller;
+      background-color: #13092D;
+  }
+
+  .post {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--box-background-color);
+    z-index: 2;
+    margin-bottom: 30px;
+    border: 5px solid #66D6E1;
+    word-wrap: break-word;
+    overflow: auto;
+  }
+
+
+  .post h1 {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .post a{
+    color: var(--link-color);
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #66d6e1 #569095;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #569095;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #66d6e1;
+    border-radius: 10px;
+    border: 5px none #ffffff;
+}
+
+
+  /* BELOW THIS POINT IS MEDIA QUERY */
+
+  /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+  @media only screen and (max-width: 1100px) {
+      #flex {
+          flex-wrap: wrap;
+      }
+
+      aside {
+          width: 100%;
+      }
+
+      /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+      main {
+          order: 2;
+      }
+
+      #leftSidebar {
+          order: 1;
+      }
+
+      #rightSidebar {
+          order: 3;
+      }
+
+      #navbar ul {
+          flex-wrap: wrap;
+      }
+  }
