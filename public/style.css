@@ -1,6 +1,6 @@
     :root {
       --header-image: url('https://indubitablyjacksin.neocities.org/canet2.0.gif');
-      --body-bg-image: url('https://indubitablyjacksin.neocities.org/canet2.0.gif');
+      --body-bg-image: url('https://indubitablyjacksin.neocities.org/public/resources/backgrounddither.jpg');
 
       /* colors */
       --content: #F2D492;
@@ -202,7 +202,7 @@ you can add them directly to the <div id="header"></div> element! */
   footer {
       background-color: var(--sub-background-color);
       /* background color for footer */
-      width: 100;
+      width: 100%;
       height: 10px;
       /* this centers the footer text */
       color: var(--main-text-color);
@@ -268,6 +268,10 @@ you can add them directly to the <div id="header"></div> element! */
   .post h1 {
     text-decoration: underline;
     text-align: center;
+  }
+
+  .post h2, h3, h4, h5 {
+      text-align: center;
   }
 
   .post a{
