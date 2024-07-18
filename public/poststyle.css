@@ -222,6 +222,7 @@ you can add them directly to the <div id="header"></div> element! */
   h3 {
       font-family: 'JosefinSans', sans-serif;
       color: var(--text-color);
+      text-align:center;
   }
 
   h1 {
