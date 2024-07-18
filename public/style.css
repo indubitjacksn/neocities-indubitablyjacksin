@@ -182,7 +182,7 @@ you can add them directly to the <div id="header"></div> element! */
   #leftSidebar {
       order: 1;
       box-sizing: border-box ;
-      overflow: auto;
+      overflow:visible;
       padding: .2%;
       background-image: url('https://indubitablyjacksin.neocities.org/comments/sparkle-bg.gif') ; /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
       background-attachment: fixed;
