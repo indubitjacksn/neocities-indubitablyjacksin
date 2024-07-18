@@ -239,7 +239,12 @@ you can add them directly to the <div id="header"></div> element! */
   h1 {
       font-size: 25px;                
   }
-  
+
+  a { 
+    color: var(--hover-link-color);
+  }
+
+
 
   strong {
       /* this styles bold text */
