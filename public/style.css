@@ -75,8 +75,7 @@
       /*color: var(--main-text-color);*/
       
       background-image: var(--body-bg-image);
-      background-repeat: no-repeat;
-      background-size: auto 100%;
+      background-repeat: repeat-x;
       z-index: 0;
 
       
