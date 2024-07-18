@@ -79,6 +79,11 @@
       
   }
 
+  img {
+    width: 200px;
+    height: auto;
+  }
+
   * {
       box-sizing: border-box;
   }
@@ -316,6 +321,7 @@ you can add them directly to the <div id="header"></div> element! */
     border-radius: 10px;
     border: 5px none #ffffff;
 }
+
 
 
   /* BELOW THIS POINT IS MEDIA QUERY */
