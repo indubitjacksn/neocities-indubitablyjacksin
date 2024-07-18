@@ -75,6 +75,7 @@
       /*color: var(--main-text-color);*/
       
       background-image: var(--body-bg-image);
+      background-repeat: no-repeat;
       z-index: 0;
 
       
@@ -162,6 +163,10 @@ you can add them directly to the <div id="header"></div> element! */
       
 
   }
+
+  aside .box {
+    padding-bottom: 5px;
+}
 
   main {
       color: var(--main-text-color);
