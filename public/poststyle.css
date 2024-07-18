@@ -83,6 +83,12 @@
     width: 200px;
     height: auto;
   }
+  
+
+  video {
+    width: 200px; 
+    height: auto;
+  }
 
   * {
       box-sizing: border-box;
