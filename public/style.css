@@ -73,6 +73,10 @@ body {
     background-image: var(--body-bg-image);
     background-repeat: repeat-x;
     background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column;
     z-index: 0;
 }
 
@@ -84,7 +88,9 @@ body {
 #container {
     max-width: 1200px;
     margin: 0 auto;
-    max-height: min-content;
+    height: 100%; /* Ensure the container takes full height */
+    display: flex;
+    flex-direction: column;
 }
 
 #container a {
@@ -120,6 +126,7 @@ body {
     justify-content: space-evenly;
     padding: 1%;
     padding-bottom: 25px;
+    flex-grow: 1; /* Allow the flex container to grow */
 }
 
 /* Sidebars */
@@ -310,10 +317,7 @@ strong {
     #navbar ul {
         flex-wrap: wrap;
     }
-
-
 }
-
 #newchangeslist {
     padding-top: 10px;
 }
