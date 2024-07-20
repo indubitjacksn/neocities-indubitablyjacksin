@@ -155,7 +155,7 @@ you can add them directly to the <div id="header"></div> element! */
   aside {
       color: var(--main-text-color);
       background-color: var(--main-background-color);
-      width: 200px;
+      width: 250px;
       padding: 20px;
       font-size: smaller;
       /* this makes the sidebar text slightly smaller */
@@ -172,6 +172,7 @@ you can add them directly to the <div id="header"></div> element! */
   main {
       color: var(--main-text-color);
       background-color: var(--main-background-color);
+      width:fit-content;
       flex: 1;
       padding: 20px;
       order: 2;
