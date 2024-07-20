@@ -73,12 +73,21 @@
       /* you can delete the line below if you'd prefer to not use an image 
       background-size: 65px;*/
       /*color: var(--main-text-color);*/
-      
-      background-image: var(--body-bg-image);
-      background-repeat: repeat-x;
+
       z-index: 0;
 
       
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+  
+
+  video {
+    width: 200px; 
+    height: auto;
   }
 
   * {
@@ -181,13 +190,6 @@ you can add them directly to the <div id="header"></div> element! */
   
   #leftSidebar {
       order: 1;
-      box-sizing: border-box ;
-      overflow:visible;
-      padding: .2%;
-      background-image: url('https://indubitablyjacksin.neocities.org/comments/sparkle-bg.gif') ; /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
-      background-attachment: fixed;
-      font-size: 16px;
-      color: var(--main-text-color)
   }
   
   /* navigation links*/
@@ -214,7 +216,7 @@ you can add them directly to the <div id="header"></div> element! */
   footer {
       background-color: var(--sub-background-color);
       /* background color for footer */
-      width: 100%;
+      width: 100;
       height: 10px;
       /* this centers the footer text */
       color: var(--main-text-color);
@@ -231,12 +233,18 @@ you can add them directly to the <div id="header"></div> element! */
   h3 {
       font-family: 'JosefinSans', sans-serif;
       color: var(--text-color);
+      text-align:center;
   }
 
   h1 {
       font-size: 25px;                
   }
-  
+
+  a { 
+    color: var(--hover-link-color);
+  }
+
+
 
   strong {
       /* this styles bold text */
@@ -286,10 +294,6 @@ you can add them directly to the <div id="header"></div> element! */
     text-align: center;
   }
 
-  .post h2, h3, h4, h5 {
-      text-align: center;
-  }
-
   .post a{
     color: var(--link-color);
     /* navbar text color */
@@ -328,6 +332,7 @@ you can add them directly to the <div id="header"></div> element! */
     border-radius: 10px;
     border: 5px none #ffffff;
 }
+
 
 
   /* BELOW THIS POINT IS MEDIA QUERY */
