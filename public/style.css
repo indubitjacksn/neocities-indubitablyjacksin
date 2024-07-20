@@ -73,7 +73,7 @@
       /* you can delete the line below if you'd prefer to not use an image 
       background-size: 65px;*/
       /*color: var(--main-text-color);*/
-      height: auto;
+      height:min-content;
       background-image: var(--body-bg-image);
       background-repeat: repeat-x;
       background-attachment: fixed;
@@ -104,7 +104,7 @@ of the container */
 and change the media query according to the comment! */
       margin: 0 auto;
       /* this centers the entire page */
-      max-height:fit-content;
+      max-height:min-content;
   }
 
   /* the area below is for all links on your page
