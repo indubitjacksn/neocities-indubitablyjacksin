@@ -73,7 +73,7 @@ body {
     background-image: var(--body-bg-image);
     background-repeat: repeat-x;
     background-attachment: fixed;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden; /* Prevent scrolling */
     display: flex;
     flex-direction: column;
