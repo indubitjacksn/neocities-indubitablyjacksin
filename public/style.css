@@ -76,6 +76,7 @@
       
       background-image: var(--body-bg-image);
       background-repeat: repeat-x;
+      background-attachment: fixed;
       z-index: 0;
 
       
